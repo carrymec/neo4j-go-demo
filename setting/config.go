@@ -33,7 +33,6 @@ func Init() error {
 	// 监控配置文件变化
 	viper.WatchConfig()
 
-
 	viper.OnConfigChange(func(in fsnotify.Event) {
 		fmt.Println("config update")
 		// 添加通知事件
